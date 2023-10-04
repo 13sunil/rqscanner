@@ -14,4 +14,4 @@ This Android app allows users to scan QR codes containing WiFi network informati
 2. Click the "Scan" button to open the QR code scanner.
 3. Point the device's camera at a QR code containing WiFi network information.
 4. The app will automatically extract the SSID and password from the QR code.
-## Screenshots
+

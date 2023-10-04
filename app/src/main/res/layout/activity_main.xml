@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="16dp">
+
+        <!-- Existing TextView for displaying scanned QR code content -->
+        <TextView
+            android:id="@+id/qrcodeContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scanned QR Code Content: "
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <!-- New TextViews for displaying SSID and password -->
+        <TextView
+            android:id="@+id/ssidText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SSID: "
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/passwordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- ImageView for displaying the QR code image (on the right) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <!-- ImageView for displaying the QR code image -->
+        <ImageView
+            android:id="@+id/qrCodeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_qr_code_scanner_24"
+            android:contentDescription="QR Code Image"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+</LinearLayout>

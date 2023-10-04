@@ -1,8 +1,7 @@
 # QR Code Scanner Android App
 
 ## Description
-This Android app allows users to scan QR codes containing WiFi network information and connect to the scanned network. It uses the device's camera to scan QR codes and extract the SSID and password to automatically connect to a WiFi network.
-
+This Android app allows users to scan QR codes containing WiFi network information and connect to the scanned network. It uses the device's camera to scan QR codes and extract the SSID.
 ## Features
 - Scan QR codes containing WiFi network information.
 - Extract SSID and password from scanned QR codes.
